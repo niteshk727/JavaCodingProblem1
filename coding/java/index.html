@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Coding Questions</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <!-- CodeMirror CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/idea.min.css">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4440982006098227"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Java Coding Questions</h1>
+    </header>
+
+    <div class="main-content">
+        <!-- Coding Section -->
+        <section>
+            <h2>Problem Statement</h2>
+            <p>Write a Java program to find the factorial of a number.</p>
+
+            <!-- CodeMirror Editor -->
+            <textarea id="code-editor">// Your Java Code Here...</textarea>
+            <button onclick="runCode()">Run Code</button>
+
+            <!-- Output Section -->
+            <div id="output"></div>
+        </section>
+
+        <!-- Google AdSense Placeholder (Right Side) -->
+        <aside class="adsense">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4440982006098227"
+                data-ad-slot="9133517899" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </aside>
+    </div>
+
+    <!-- CodeMirror JS CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/clike/clike.min.js"></script>
+
+    <!-- Script to Initialize CodeMirror -->
+    <script>
+        const editor = CodeMirror.fromTextArea(document.getElementById('code-editor'), {
+            lineNumbers: true,
+            mode: "text/x-java",
+            theme: "idea"
+        });
+
+        function runCode() {
+            const code = editor.getValue();
+            document.getElementById('output').innerText = "Java Code: \n" + code;
+        }
+    </script>
+</body>
+
+</html>
