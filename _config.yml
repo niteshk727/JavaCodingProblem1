@@ -1,6 +1,3 @@
 title: Java Interview Questions
 theme: jekyll-theme-cayman
 markdown: kramdown
-kramdown:
-  input: GFM
-highlighter: rouge
