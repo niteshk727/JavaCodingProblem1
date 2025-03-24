@@ -55,7 +55,9 @@ public class FirstNonRepeatingCharacter {
 }
 </details>
 
-Time & Space Complexity Analysis
-Approach	Time Complexity	Space Complexity
-Java 8 Stream API	O(n)	O(n)
-Without Java 8	O(n)	O(n)
+### Time & Space Complexity Analysis
+
+| Approach          | Time Complexity | Space Complexity |
+|-------------------|-----------------|------------------|
+| Java 8 Stream API | O(n)            | O(n)             |
+| Without Java 8    | O(n)            | O(n)             |
