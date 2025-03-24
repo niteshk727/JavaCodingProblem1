@@ -4,22 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minimal/0.3.0/minimal.css"> -->
+    <!-- Linking Cayman Theme CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@jekyll-theme-cayman/cayman.min.css">
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4440982006098227"
      crossorigin="anonymous"></script>
+    <style>
+        body { display: flex; margin: 0; }
+        .content { flex: 3; padding: 20px; }
+        .ads { flex: 1; padding: 20px; }
+    </style>
 </head>
 <body>
-    <div>
+    <div class="content">
         <!-- Main Content -->
-        <div>
-            {{ content }}
-        </div>
+        {{ content }}
+    </div>
 
-        <!-- Ad Block on the Right Side -->
-        <div">
-            {% include ads.html %}
-        </div>
+    <!-- Ad Block on the Right Side -->
+    <div class="ads">
+        {% include ads.html %}
     </div>
 
     <footer>
