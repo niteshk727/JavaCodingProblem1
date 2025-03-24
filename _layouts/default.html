@@ -4,24 +4,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <!-- Linking Cayman Theme CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@jekyll-theme-cayman/cayman.min.css">
+    <style>
+        body { 
+            display: flex; 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+        }
+        .content { 
+            flex: 3; 
+            padding: 20px; 
+            max-width: 80%; 
+        }
+        .ads { 
+            flex: 1; 
+            padding: 20px; 
+            background-color: #f0f0f0; 
+            border-left: 1px solid #ddd; 
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+        footer { 
+            margin-top: 20px; 
+            text-align: center; 
+            font-size: 14px; 
+            color: #666; 
+        }
+        pre, code {
+            background-color: #f5f5f5;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        details {
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #e0f7fa;
+            border: 1px solid #b2ebf2;
+            border-radius: 5px;
+        }
+    </style>
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4440982006098227"
      crossorigin="anonymous"></script>
-    <style>
-        body { display: flex; margin: 0; }
-        .content { flex: 3; padding: 20px; }
-        .ads { flex: 1; padding: 20px; }
-    </style>
 </head>
 <body>
     <div class="content">
-        <!-- Main Content -->
         {{ content }}
     </div>
 
-    <!-- Ad Block on the Right Side -->
     <div class="ads">
         {% include ads.html %}
     </div>
