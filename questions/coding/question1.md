@@ -32,7 +32,13 @@ public class FirstNonRepeatingCharacter {
         System.out.println("First non-repeating character: " + result.orElse(null));
     }
 }
-</details> <details> <summary>Solution 2 (Without Java 8 Features)</summary>
+```
+</details>
+
+<details>
+    <summary>Solution 2 (Without Java 8 Features)</summary>
+
+```Java
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -53,6 +59,7 @@ public class FirstNonRepeatingCharacter {
         }
     }
 }
+```
 </details>
 
 ### Time & Space Complexity Analysis
