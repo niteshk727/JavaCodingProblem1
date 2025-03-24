@@ -13,7 +13,7 @@ Find the first non-repeating character in a given string. If all characters repe
 <details>
   <summary>Solution 1 (Java 8)</summary>
 
-```java
+{% highlight java %}
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -40,7 +40,7 @@ public class FirstNonRepeatingCharacter {
         System.out.println("First non-repeating character: " + result);
     }
 }
-```
+{% endhighlight %}
 
 </details>
 
@@ -49,7 +49,7 @@ public class FirstNonRepeatingCharacter {
 <details>
   <summary>Solution 2 (Without Java 8 Features)</summary>
 
-```java
+{% highlight java %}
 import java.util.HashMap;
 import java.util.Map;
 
@@ -72,8 +72,6 @@ public class FirstNonRepeatingCharacter {
         System.out.println("No non-repeating character found.");
     }
 }
-```
+{% endhighlight %}
 
 </details>
-
----
