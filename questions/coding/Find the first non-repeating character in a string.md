@@ -35,6 +35,7 @@ public class FirstNonRepeatingCharacter {
 
 <details>
     <summary><strong>Solution 2 (Without Java 8)</strong></summary>
+```Java
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -53,5 +54,5 @@ public class FirstNonRepeatingCharacter {
         }
         return null;
     }
-}
+}```
 </details>
