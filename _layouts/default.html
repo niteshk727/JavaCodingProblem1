@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minimal/0.3.0/minimal.css">
+    <!-- Google AdSense -->
+    <script data-ad-client="YOUR-ADSENSE-ID" async 
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+    <div style="display: flex;">
+        <!-- Main Content -->
+        <div style="flex: 4; padding: 20px;">
+            {{ content }}
+        </div>
+
+        <!-- Ad Block on the Right Side -->
+        <div style="flex: 1; padding: 20px;">
+            {% include ads.html %}
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding-top: 20px;">
+        <p>&copy; 2025 Nitesh Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
