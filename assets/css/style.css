@@ -90,3 +90,11 @@ header {
     66% { transform: translateX(-200%); }
     100% { transform: translateX(0); }
 }
+
+/* CodeMirror Editor Styles */
+.CodeMirror {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}

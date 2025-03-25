@@ -29,7 +29,13 @@
             <p>Write a Java program to find the factorial of a number.</p>
 
             <!-- CodeMirror Editor -->
-            <textarea id="code-editor">// Your Java Code Here...</textarea>
+            <textarea id="code-editor">
+                public class Main { 
+                    public static void main(String[] args) { 
+                        System.out.println("Hello, CodeMirror!"); 
+                    } 
+                }
+            </textarea>
             <button onclick="runCode()">Run Code</button>
 
             <!-- Output Section -->
@@ -60,7 +66,7 @@
 
         function runCode() {
             const code = editor.getValue();
-            document.getElementById('output').innerText = "Java Code: \n" + code;
+            document.getElementById('output').innerText = code;
         }
     </script>
 </body>
