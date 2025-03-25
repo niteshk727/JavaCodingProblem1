@@ -7,9 +7,12 @@
     <title>Java Coding Questions</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
 
-    <!-- CodeMirror CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/idea.min.css">
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.css">
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/mode/clike/clike.min.js"></script>
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4440982006098227"
@@ -30,13 +33,13 @@
 
             <!-- CodeMirror Editor -->
             <textarea id="code-editor">
-                public class Main { 
-                    public static void main(String[] args) { 
-                        System.out.println("Hello, CodeMirror!"); 
-                    } 
-                }
+public class Main { 
+public static void main(String[] args) { 
+System.out.println("Hello, CodeMirror!"); 
+} 
+}
             </textarea>
-            <button onclick="runCode()">Run Code</button>
+            <button onclick="runCode()">Run this Code</button>
 
             <!-- Output Section -->
             <div id="output"></div>
@@ -60,8 +63,9 @@
     <script>
         const editor = CodeMirror.fromTextArea(document.getElementById('code-editor'), {
             lineNumbers: true,
-            mode: "text/x-java",
-            theme: "idea"
+            mode: "text/x-java",  // Programming Language
+            theme: "default",     // Theme
+            matchBrackets: true   // Highlight matching brackets
         });
 
         function runCode() {
