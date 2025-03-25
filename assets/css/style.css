@@ -1,95 +1,86 @@
+/* General styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
 header {
     background-color: #333;
-    color: white;
-    padding: 1rem;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-header .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-header img {
+.logo img {
     height: 50px;
+    vertical-align: middle;
 }
 
-/* Main Content */
+.logo h1 {
+    display: inline;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
 .main-content {
-    display: flex;
     padding: 20px;
 }
 
-/* Carousel */
-.carousel {
-    flex: 3;
-    margin-right: 20px;
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
 }
 
 .carousel-item {
-    padding: 1rem;
-    margin: 1rem 0;
-    background-color: #f4f4f4;
-    text-align: center;
-    border-radius: 5px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
 }
 
-/* About Section */
-.about {
-    margin: 20px 0;
-}
-
-/* Categories */
-.categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+.about, .categories {
     margin-top: 20px;
 }
 
-/* AdSense Block */
+.category {
+    margin-bottom: 10px;
+}
+
 .adsense {
-    flex: 1;
-    padding-left: 20px;
-}
-
-/* Footer */
-footer {
+    margin-top: 20px;
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: relative;
-    width: 100%;
 }
 
-/* Carousel */
-.carousel {
-    overflow: hidden;
-    width: 100%;
-    margin-bottom: 20px;
-}
+/* Responsive styles */
+@media (min-width: 768px) {
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.carousel-inner {
-    display: flex;
-    animation: scroll 10s linear infinite;
-}
+    .carousel-container {
+        flex: 1 1 100%;
+    }
 
-.carousel-item {
-    min-width: 100%;
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
+    .about, .categories {
+        flex: 1 1 48%;
+        margin-right: 2%;
+    }
+
+    .about {
+        margin-right: 2%;
+    }
+
+    .categories {
+        margin-right: 0;
+    }
+
+    .adsense {
+        flex: 1 1 100%;
+        margin-top: 20px;
+    }
 }
 
 /* Smooth scrolling effect */
